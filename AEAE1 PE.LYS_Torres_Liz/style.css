@@ -1,0 +1,66 @@
+body{
+    background: #222;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+.menu {
+    height: 50px;
+    width: auto;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 5px 20px;
+    background-image: url(img/logo.png);
+    float: left;
+}
+.subapartats{
+    height: 50px;
+    overflow: hidden;
+    float: left;
+}
+
+
+li {
+    margin: 5px 0;
+    display: inline-block;
+    height: 50px;
+    color: #FFF;
+}
+
+.xarxes {
+    float: inline-end;
+}
+
+h1 {
+    margin: auto;
+    color: #ccc;
+}
+
+.documentals {
+   
+}
+
+.imatge {
+    width: 175px;
+    height: 255px;
+    background: red;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    float: left;
+    margin: 5px;
+}
+
+.nom{
+    color: #FFF;
+}
+
+.i1 {
+    background-image: url(img/1982Koyaanisqatsi.jpg)
+}
+ 
+.i2 {
+    background-image: url(img/2004YTuQueSabes.jpg);
+
+}
