@@ -62,3 +62,100 @@ p {
     text-indent: 50px;
     padding: 10PX;
 }
+
+
+/* Codi del menú hamburguesa */
+
+#alternador {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#alternador label {
+  width: 5rem;
+  height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding-top: 1rem;
+  transition: all .5s ease;
+  opacity: 1;
+}
+
+#alternador b {
+  display: block;
+  width: 4rem;
+  height: 0.5rem;
+  background: black;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+* {
+  font-family: Arial, San-derif;
+}
+
+#alternador ul {
+  margin-top: 2rem;
+  padding-left: 0;
+  width: 10rem;
+  border-radius: 10%;
+  top: 2.5rem;
+}
+
+#alternador li {
+  width:10rem;
+  list-style-type: none;
+  background: lightblue;
+  border: solid 1px white;
+  line-height: 2.5rem;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  order-radius: 0.5rem;
+  border-bottom: 1px solid white;
+  transform: scale(120%);
+  margin: auto 1px;
+  height: 3rem;
+  float: none;
+}
+
+#alternador a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+#alternador li:hover {
+  background: mediumpurple;
+  box-shadow: inset 0 5px 5px black;
+}
+
+#alternador .desplega {
+  position: absolute;
+  left: -12rem;
+  opacity: 1;
+  transition: all .5s ease;
+}
+
+#alternador h1 {
+  text-align: center;
+}
+
+#alternador input[type=checkbox]:checked+label {
+  opacity: 1;
+}
+
+#alternador input[type=checkbox]:checked+label~.desplega {
+  left: 0;
+}
