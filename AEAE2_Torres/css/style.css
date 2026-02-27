@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    background:linear-gradient(to bottom left, pink 50%, white 50%);
+    background-repeat: no-repeat;
+}
+
+.contenidor {
+    width: 960px;
+    margin: auto;
+}
+
+.cap {
+    height: 589px;
+    width: 940px;
+}
+
+.imatges {
+    height: 589px;
+    width: 940px;
+    background-image: url(../img/ani/team.png);
+}
+
+.titol {
+    color: black ;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.cos{
+    height: 786px;
+    width: 940px;
+    
+}
+
+.peu {
+    height: 240px;
+    width: 940px;
+    background-image: url(../img/logo_carsandfilms.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cotxe {
+    height: 240px;
+    width: 292px;
+    background: white;
+    margin: 6px;
+    float: left;
+}
+
+.c1{
+    margin-right: 20px;
+}
+
+.c2{
+    margin-right: 20px;
+}
+
+.c4{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.c5{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.c6{
+    margin-top: 20px;
+}
+
+.c7{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.c8{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.c9{
+    margin-top: 20px;
+}
+
+.imatge {
+    height: 200px;
+    width: 292px;
+    background: pink;
+    background-image: url(../img/small/small_pulp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i2 {
+    background-image: url(../img/small/small_taxi.jpg);
+}
+
+.i3 {
+    background-image: url(../img/small/small_bond.jpg);
+}
+
+.i4 {
+    background-image: url(../img/small/small_ghost.jpg);
+}
+
+.i5 {
+    background-image: url(../img/small/small_bean.jpg);
+}
+
+.i6 {
+    background-image: url(../img/small/small_back.jpg);
+}
+
+.i7 {
+    background-image: url(../img/small/small_rider.jpg);
+}
+
+.i8 {
+    background-image: url(../img/small/small_team.jpg);
+}
+
+.i9 {
+    background-image: url(../img/small/small_break.jpg);
+}
+
+
+.text {
+    height: 40px;
+    width: 292px;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
