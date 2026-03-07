@@ -1,0 +1,198 @@
+:root {
+    /* Aquí hi van les variables */
+}
+
+* {
+    /* Aquí hi va el reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aquí hi van les fonts personalitzades */
+@font-face {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+    /* Aquí hi van propietats generals */
+
+body {
+    background: #0f0f14;
+    color: #eaeaea;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+    /* Aquí hi van propietats responsives */
+
+
+
+@media (max-width:480px)
+    /* Aquí hi va la versió mòbil */
+ {
+    .work-grid{
+    grid-template-columns: 1fr;
+    }
+ }
+
+@media (min-width:481px) and (max-width:1279px) 
+ {
+
+        li {
+            ackground: black;
+        }
+    
+ }
+
+
+@media (min-width:1280px)
+ {
+    body {
+        ackground: white;
+    }
+}
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15,15,20,0.9);
+  backdrop-filter: blur(10px);
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+section {
+  padding: 120px 10%;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+p {
+  color: #aaa;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.projecte {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.projecte img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.projecte:hover img {
+  transform: scale(1.1);
+}
+
+.projecte-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+}
+
+.projecte-info h3 {
+  font-size: 1.2rem;
+}
+
+.projecte-info span {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+
+
+form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+
+input, textarea {
+  padding: 10px;
+  background: #1a1a1f;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+input[type="submit"] {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #aaa;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+
