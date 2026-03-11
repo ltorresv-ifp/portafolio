@@ -1,61 +1,18 @@
-:root {
-    /* Aquí hi van les variables */
-}
-
 * {
-    /* Aquí hi va el reset */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  /* Aquí hi va el reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Aquí hi van les fonts personalitzades */
-@font-face {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-
-    /* Aquí hi van propietats generals */
+  /* Aquí hi van propietats generals */
 
 body {
-    background: #0f0f14;
-    color: #eaeaea;
-    font-family: 'Inter', sans-serif;
-    scroll-behavior: smooth;
+  background: #000;
+  color: #eaeaea;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
 }
-
-
-
-    /* Aquí hi van propietats responsives */
-
-
-
-@media (max-width:480px)
-    /* Aquí hi va la versió mòbil */
- {
-    .work-grid{
-    grid-template-columns: 1fr;
-    }
- }
-
-@media (min-width:481px) and (max-width:1279px) 
- {
-
-        li {
-            ackground: black;
-        }
-    
- }
-
-
-@media (min-width:1280px)
- {
-    body {
-        ackground: white;
-    }
-}
-
-
 
 nav {
   position: fixed;
@@ -118,20 +75,19 @@ p {
 }
 
 .sobre-mi {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  width: 100vw;
-  align-items: center;
+  vertical-align: center;
 }
 
 .sobre-mi img {
-  max-width: 100%;
-  grid-column: 1/5;
+  width: 50%;
+  vertical-align: center;
 }
 
 .sobre-mi-info {
-  grid-column: 5/10;
-  padding: 3em;
+  display: inline-block;
+  width: 44%;
+  padding: 3%;
+  vertical-align: center;
 }
 
 .sobre-mi-info h2 {
@@ -189,8 +145,6 @@ p {
   color: #bbb;
 }
 
-
-
 form {
   margin-top: 40px;
   display: flex;
@@ -224,4 +178,37 @@ footer {
   color: #555;
 }
 
+  /* Aquí hi van propietats responsives */
 
+@media (max-width:480px)
+    /* Aquí hi va la versió mòbil */
+ {
+        .work-grid{
+          grid-template-columns: 1fr;
+        }
+
+        .sobre-mi img {
+          width: 100%;
+        }
+
+        .sobre-mi-info {
+          width: 100%;
+        }
+ }
+
+@media (min-width:481px) and (max-width:1279px) 
+ {
+
+        .work-grid {  
+          grid-template-columns: repeat(2, 1fr);
+        }
+    
+ }
+
+
+@media (min-width:1280px)
+ {
+    body {
+       
+    }
+}
