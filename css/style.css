@@ -209,6 +209,6 @@ footer {
 @media (min-width:1280px)
  {
     body {
-       
+       background: #000;
     }
 }
